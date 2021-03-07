@@ -1,0 +1,13 @@
+<h4 class="m-2">You Selected Department with Id = {{departmentId}}</h4>
+
+<p>
+    <button class="btn btn-success m-2" (click)="showOverview()">Overview</button>
+    <button class="btn btn-success m-2" (click)="showContact()">Contact</button>
+</p>
+
+<router-outlet></router-outlet>
+
+<p>
+    <button class="btn btn-success m-2" (click)="onPrevious()">Previous</button>
+    <button class="btn btn-success m-2" (click)="onNext()">Next</button>
+</p>

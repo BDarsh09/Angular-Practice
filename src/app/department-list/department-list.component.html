@@ -1,0 +1,7 @@
+<h4 class="m-3">Get Your Departments Here</h4>
+
+<ul>
+    <li (click)="onSelect(department)" *ngFor="let department of departments" class="list-unstyled">
+        <button type="button" class="btn btn-primary my-2"><span class="badge badge-light mx-2">{{department.id}}</span>{{department.name}}</button>
+    </li>
+</ul>
