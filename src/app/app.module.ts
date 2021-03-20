@@ -1,5 +1,7 @@
 import { OrdersModule } from './orders/orders.module';
 import { CustomersModule } from './customers/customers.module';
+import { AdminModule } from './admin/admin.module';
+import { AuthModule } from './auth/auth/auth.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,6 +14,7 @@ import { DepartmentDetailsComponent } from './department-details/department-deta
 import { DepartmentOverviewComponent } from './department-overview/department-overview.component';
 import { DepartmentContactComponent } from './department-contact/department-contact.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +23,15 @@ import { DepartmentContactComponent } from './department-contact/department-cont
     EmployeeListComponent,
     DepartmentDetailsComponent,
     DepartmentOverviewComponent,
-    DepartmentContactComponent
+    DepartmentContactComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CustomersModule,
-    OrdersModule
+    OrdersModule,
+    AdminModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
