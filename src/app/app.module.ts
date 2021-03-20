@@ -1,7 +1,5 @@
 import { OrdersModule } from './orders/orders.module';
 import { CustomersModule } from './customers/customers.module';
-import { AdminModule } from './admin/admin.module';
-import { AuthModule } from './auth/auth/auth.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -30,8 +28,6 @@ import { DepartmentContactComponent } from './department-contact/department-cont
     AppRoutingModule,
     CustomersModule,
     OrdersModule,
-    AdminModule,
-    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
